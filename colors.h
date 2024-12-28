@@ -5,6 +5,8 @@
 #ifndef COLORS_H
 #define COLORS_H
 
+#include <stdio.h>
+
 void red(char *text);
 void orange(char *text);
 void yellow(char *text);

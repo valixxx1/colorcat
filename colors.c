@@ -2,6 +2,8 @@
  * License - MIT
 */
 
+#include "colors.h"
+
 void red(char* text){
 	printf("\033[31m%s\033[0m", text);
 }
