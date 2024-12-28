@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
             case 'h':
                 puts(
                     "colorcat - colored version of 'cat' command\n"
-                    "Usage: colorcat [file] [flags]\n"
+                    "Usage: colorcat <file> [flags]\n"
                     "Flags:\n"
                     "\t-h, --help: help menu\n"
                     "\t-v, --version: version of colorcat"
@@ -30,6 +30,11 @@ int main(int argc, char **argv) {
                 puts("colorcat versin: indev");
                 return 0;
         }
+    }
+
+    if (optind >= argc) {
+        puts("Usage: colorcat <file> [flags]");
+        return 1;
     }
     return 0;
 }
